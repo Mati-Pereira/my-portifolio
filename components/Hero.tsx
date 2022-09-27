@@ -15,7 +15,7 @@ export default function Hero(): JSX.Element {
   })
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-y-hidden">
       <BackgroundCircles />
       <h1>
         <span>{text}</span>
