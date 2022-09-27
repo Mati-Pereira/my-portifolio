@@ -20,8 +20,8 @@ function Header(): JSX.Element {
           ease: 'easeOut',
         }}
       >
-        <SocialIcon target="_blank" network='github' url='https://github.com/Mati-Pereira' bgColor='transparent' fgColor='gray' />
-        <SocialIcon target="_blank" network='linkedin' url='https://www.linkedin.com/in/matheus-rodrigues-pereira/' bgColor='transparent' fgColor='gray' />
+        <SocialIcon className='hover:animate-pulse' target="_blank" network='github' url='https://github.com/Mati-Pereira' bgColor='transparent' fgColor='gray' />
+        <SocialIcon className='hover:animate-pulse' target="_blank" network='linkedin' url='https://www.linkedin.com/in/matheus-rodrigues-pereira/' bgColor='transparent' fgColor='gray' />
       </motion.div>
       <motion.div
         initial={{
@@ -39,7 +39,7 @@ function Header(): JSX.Element {
           ease: 'easeOut',
         }}
       className='flex flex-row items-center text-gray-300 cursor-pointer'>
-        <SocialIcon target='_blank' network='email' url='mailto:matheus-rodrigues37@live.com' bgColor='transparent' fgColor='gray' />
+        <SocialIcon className='hover:animate-pulse' target='_blank' network='email' url='mailto:matheus-rodrigues37@live.com' bgColor='transparent' fgColor='gray' />
         <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get in Touch</p>
       </motion.div>
     </header>

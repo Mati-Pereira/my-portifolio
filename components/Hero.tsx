@@ -17,10 +17,14 @@ export default function Hero(): JSX.Element {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-y-hidden">
       <BackgroundCircles />
-      <h1>
-        <span>{text}</span>
-        <Cursor cursorColor=" #5E8874" />
-      </h1>
+      <img className="rounded-full h-32 w-32 mx-auto" src="https://github.com/Mati-Pereira.png" alt="profile-picture" />
+      <div>
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[12px]">Fullstack Web Developer</h2>
+        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+          <span className="mr-3 ">{text}</span>
+          <Cursor cursorColor=" #5E8874" />
+        </h1>
+      </div>
     </div>
   )
 }
