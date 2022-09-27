@@ -14,9 +14,7 @@ export default function BackgroundCircles({ }: Props): JSX.Element {
         opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0]
       }}
       transition={{
-        repeat: Infinity,
-        duration: 2.5,
-        repeatDelay: 5
+        duration: 3,
       }}
       className='relative flex justify-center items-center'>
       <div className='absolute border border-gray-700 h-[300px] w-[300px] rounded-full mt-64 animate-pulse -z-20' />
