@@ -20,7 +20,7 @@ export default function About() {
           duration: 1
         }}
         src="https://github.com/Mati-Pereira.png"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[300px] xl:h-[400px]"
+        className="-mb-32 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[300px] xl:h-[400px]"
       />
       <div className="space-y10 px-0 md:px-10 lg:px-28">
         <h4 className="text-4xl font-semibold lg:mb-14">Here is a little of <span className="underline decoration-yellow-700 ">My Story</span></h4>
