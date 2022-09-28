@@ -1,11 +1,8 @@
 import { motion } from "framer-motion"
 
-
-type Props = {}
-
-export default function About({ }: Props) {
+export default function About() {
   return (
-    <div className="flex relative h-screen text-center md:text-left md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center">
+    <div className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">About</h3>
       <motion.img
         initial={{
@@ -25,7 +22,11 @@ export default function About({ }: Props) {
         src="https://github.com/Mati-Pereira.png"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[300px] xl:h-[400px]"
       />
-
+      <div className="space-y10 px-0 md:px-10 ">
+        <h4 className="text-4xl font-semibold">Here is a little of <span className="underline decoration-yellow-700 ">My Story</span></h4>
+        <p className="text-sm text-left mt-4">Hello, how are you? My name is Matheus Rodrigues Pereira and I thank you for taking the time to look at this portfolio. I am 25 years old and currently unemployed. I graduated in Electrical Engineering from Universidade Vale do Rio Doce, in the year 2019, which is located in Governador Valadares, in the east of Minas Gerais. I did an internship as an Electric Panel Assembler.</p>
+        <p className="text-sm text-left mt-4">Programming has always been a passion of mine, since college, I always thought of connecting my knowledge with new technologies, it was and is something very instinctive to me. I dedicate myself heart and soul to achieve my dream of being a Front-End web developer.</p>
+      </div>
     </div>
   )
 }
