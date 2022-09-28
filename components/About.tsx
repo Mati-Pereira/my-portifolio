@@ -2,7 +2,18 @@ import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <div className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1
+      }}
+
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">About</h3>
       <motion.img
         initial={{
@@ -27,6 +38,6 @@ export default function About() {
         <p className="text-sm text-justify mt-2">Hello, how are you? My name is Matheus Rodrigues Pereira and I thank you for taking the time to look at this portfolio. I am 25 years old and currently unemployed. I graduated in Electrical Engineering from Universidade Vale do Rio Doce, in the year 2019.</p>
         <p className="text-sm text-justify mt-2">Programming has always been a passion of mine, since college, I always thought of connecting my knowledge with new technologies, it was and is something very instinctive to me. I dedicate myself heart and soul to achieve my dream of being a <span className="underline decoration-yellow-700 font-bold">FullStack Web Developer.</span></p>
       </div>
-    </div>
+    </motion.div>
   )
 }
