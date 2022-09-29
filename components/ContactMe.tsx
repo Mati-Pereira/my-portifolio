@@ -70,15 +70,11 @@ export default function ContactMe() {
           <PhoneIcon className='text-yellow-600 h-7 w-7  animate-pulse' />
           <p className='text-xl md:text-2xl '>(11) 94476-1997</p>
         </div>
-        <div className='flex items-center justify-center space-x-5 '>
-          <EnvelopeIcon className='text-yellow-600 h-7 w-7  animate-pulse' />
-          <a className='text-lg md:text-2xl whitespace-nowrap' href='mailto:matheus-rodrigues37@live.com'>matheus-rodrigues37@live.com</a>
-        </div>
         <div className='flex items-center justify-center space-x-5'>
           <FaDiscord className='text-yellow-600 h-7 w-7  animate-pulse' />
           <p className='text-xl md:text-2xl'>Matheus Rodrigues#5766</p>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto' id='contact-form'>
+        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-full md:w-fit mx-auto' id='contact-form'>
 
           <div className='flex flex-col md:flex-row md:space-x-2 gap-2 md:gap-0 w-full'>
             <input {...register('name')} placeholder='Name' className='contactInput' type="text" />
