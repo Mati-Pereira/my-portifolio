@@ -61,11 +61,11 @@ export default function ContactMe() {
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left  max-w-6xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Contact</h3>
-      <div className="flex flex-col mt-32">
-        <h4 className="text-4xl font-semibold text-center">Interested, get in contact and <span className="decoration-yellow-600/50 underline">Let&apos;s Talk</span></h4>
+      <div className="flex flex-col mt-24 md:mt-32">
+        <h4 className="text-3xl md:text-4xl font-semibold text-center">Interested, get in contact and <span className="decoration-yellow-600/50 underline">Let&apos;s Talk</span></h4>
       </div>
 
-      <div className='space-y-10 pt-4'>
+      <div className='space-y-6 md:space-y-10'>
         <div className='flex items-center justify-center space-x-5 '>
           <PhoneIcon className='text-yellow-600 h-7 w-7  animate-pulse' />
           <p className='text-xl md:text-2xl '>(11) 94476-1997</p>
