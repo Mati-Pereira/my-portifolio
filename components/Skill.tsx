@@ -12,7 +12,7 @@ export default function Skill({ directionsLeft }: Props) {
           x: directionsLeft ? -200 : 200,
           opacity: 0,
         }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.25, ease: "easeInOut" }}
         whileInView={{ opacity: 1, x: 0 }}
         src="html-5.png"
         className="rounded-3xl border border-gray-500 object-cover h-24 w-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out "
