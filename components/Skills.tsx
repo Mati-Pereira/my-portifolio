@@ -17,14 +17,14 @@ export default function Skills(): JSX.Element {
       duration: 1.5,
     }}
 
-    className="h-screen flex relative flex-col textcenter md:text-left xl:dlex-row max-w-[1000px] xl:px-10 min-h-screen justify-center sl:space-y-0 mx-auto items-center">
+      className="h-screen flex relative flex-col textcenter md:text-left xl:dlex-row max-w-[1000px] xl:px-10 min-h-screen justify-center sl:space-y-0 mx-auto items-center px-10 text-center">
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Skills</h3>
-      <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>Hover over a skill for current proficiency</h3>
-      <div className='grid grid-cols-4 gap-5'>
-        <Skill directionsLeft />
-        <Skill directionsLeft />
-        <Skill directionsLeft />
-        <Skill directionsLeft />
+      <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm mt-6'>Hover over a skill for current proficiency</h3>
+      <div className='grid grid-cols-4 gap-5 '>
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
         <Skill />
         <Skill />
         <Skill />
