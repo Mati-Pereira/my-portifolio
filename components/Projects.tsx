@@ -35,12 +35,13 @@ export default function Projects() {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 ">
         {
           projects.map((project) => (
-            <div key={project.id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+            <div key={project.id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-screen">
               <Link href={project.url} target="_blank">
-                <img src={project.img} alt={project.description} className="cursor-pointer"/>
+                <img src={project.img} alt={project.description} className="cursor-pointermx-12 mt-12 max-w-lg md:max-w-screen-md sm:max-w-screen-sm" />
               </Link>
-              <div>
-                <h4>Case Study {project.id} of 3: <strong>{project.name}</strong></h4>
+              <div className="space-y-10 px-0 md:px-10 max-w-6xl ">
+                <h4 className="text-4xl font-semibold text-center"><span className="underline decoration-yellow-600/50 ">Case Study {project.id} of 3:</span> {project.name}</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt recusandae animi quidem veritatis, sint doloribus qui iusto ea ipsam. Quibusdam odio excepturi omnis provident ullam corrupti sit quae velit!</p>
               </div>
             </div>
           ))
