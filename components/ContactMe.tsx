@@ -65,22 +65,22 @@ export default function ContactMe() {
         <h4 className="text-4xl font-semibold text-center">Interested, get in contact and <span className="decoration-yellow-600/50 underline">Let&apos;s Talk</span></h4>
       </div>
 
-      <div className='space-y-10 '>
+      <div className='space-y-10 pt-4'>
         <div className='flex items-center justify-center space-x-5 '>
           <PhoneIcon className='text-yellow-600 h-7 w-7  animate-pulse' />
-          <p className='text-2xl '>(11) 94476-1997</p>
+          <p className='text-xl md:text-2xl '>(11) 94476-1997</p>
         </div>
         <div className='flex items-center justify-center space-x-5 '>
           <EnvelopeIcon className='text-yellow-600 h-7 w-7  animate-pulse' />
-          <a className='text-2xl' href='mailto:matheus-rodrigues37@live.com'>matheus-rodrigues37@live.com</a>
+          <a className='text-lg md:text-2xl whitespace-nowrap' href='mailto:matheus-rodrigues37@live.com'>matheus-rodrigues37@live.com</a>
         </div>
-        <div className='flex items-center justify-center space-x-5 '>
+        <div className='flex items-center justify-center space-x-5'>
           <FaDiscord className='text-yellow-600 h-7 w-7  animate-pulse' />
-          <p className='text-2xl'>Matheus Rodrigues#5766</p>
+          <p className='text-xl md:text-2xl'>Matheus Rodrigues#5766</p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto' id='contact-form'>
 
-          <div className='flex space-x-2'>
+          <div className='flex flex-col md:flex-row md:space-x-2 gap-2 md:gap-0 w-full'>
             <input {...register('name')} placeholder='Name' className='contactInput' type="text" />
             <input {...register('email')} placeholder='Email' className='contactInput' type="email" />
           </div>
