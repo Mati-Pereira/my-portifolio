@@ -7,21 +7,21 @@ export default function Projects() {
     {
       id: 1,
       name: "RocketNotes",
-      description: "RocketNotes App",
+      description: "This project consists of a note saver, with authentication for each user to write down their notes securely and privately.",
       url: 'https://frontend-c7pofbs65-mati-pereira.vercel.app/',
       img: 'rocketnotes.png'
     },
     {
       id: 2,
       name: "GITFAV",
-      description: "RocketNotes App",
+      description: "This project consists of entering the github user of the person you want to search, thus showing the number of this person's repositories and some other relevant information to see",
       url: 'https://gitfav.netlify.app/',
       img: 'GITFAV.png'
     },
     {
       id: 3,
       name: "RocketNotes",
-      description: "RocketNotes App",
+      description: "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
       url: 'https://todolistforlearningintentions.netlify.app/',
       img: 'todoList.png'
     },
@@ -47,7 +47,7 @@ export default function Projects() {
               </Link>
               <div className="space-y-10 px-0  max-w-6xl">
                 <h4 className="text-4xl font-semibold text-center"><span className="underline decoration-yellow-600/50 ">Case Study {project.id} of 3:</span> {project.name}</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt recusandae animi quidem veritatis, sint doloribus qui iusto ea ipsam. Quibusdam odio excepturi omnis provident ullam corrupti sit quae velit!</p>
+                <p>{project.description}</p>
               </div>
 
             </motion.div>
