@@ -24,11 +24,11 @@ export default function Skills(): JSX.Element {
         <Skill src='skills/html5.png' percentage='80%' />
         <Skill src='skills/css-3.png' percentage='85%' />
         <Skill src='skills/js.png' percentage='70%' />
+        <Skill src='skills/typescript.png' percentage='60%' />
         <Skill src='skills/nodejs.png' percentage='60%' />
         <Skill src='skills/react.png' percentage='70%' />
-        <Skill src='skills/typescript.png' percentage='60%' />
-        <Skill src='skills/git.png' percentage='60%' />
         <Skill src='skills/nextjs.png' percentage='60%' />
+        <Skill src='skills/git.png' percentage='60%' />
         <Skill src='skills/github.png' percentage='50%' />
       </div>
     </motion.div>
