@@ -16,6 +16,7 @@ export default function Projects() {
       name: "RocketNotes",
       description: "This project consists of a note saver, with authentication for each user to write down their notes securely and privately.",
       url: 'https://frontend-c7pofbs65-mati-pereira.vercel.app/',
+      github: '',
       img: 'rocketnotes.png'
     },
     {
@@ -23,6 +24,7 @@ export default function Projects() {
       name: "GITFAV",
       description: "This project consists of entering the github user of the person you want to search, thus showing the number of this person's repositories and some other relevant information to see",
       url: 'https://gitfav.netlify.app/',
+      github: '',
       img: 'GITFAV.png'
     },
     {
@@ -30,6 +32,7 @@ export default function Projects() {
       name: "ToDo-List",
       description: "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
       url: 'https://todo-list-matheus-rodrigues.netlify.app/',
+      github: '',
       img: 'todoList.png'
     },
   ]
@@ -54,15 +57,15 @@ export default function Projects() {
     >
       {projects.map(project => (
         <SwiperSlide key={project.id}
-          className='flex justify-center items-center'
+          className=''
         >
           <div
-            key={project.id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-20 h-screen lg:flex-row">
+            key={project.id} className="w-screen  flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-screen lg:flex-row">
             <Link href={project.url} target="_blank">
               <img src={project.img} alt={project.description} className="cursor-pointer md:mx-12 mt-12 lg:max-w-lg md:max-w-md sm:max-w-sm" />
             </Link>
             <div className="space-y-10 px-0  max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center"><span className="underline decoration-yellow-600/50 ">Case Study {project.id} of 3:</span> {project.name}</h4>
+              <h4 className="text-4xl font-semibold text-center underline decoration-yellow-600/50 pt-16 md:pt-0">{project.name}</h4>
               <p>{project.description}</p>
             </div>
           </div>
