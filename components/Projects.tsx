@@ -1,13 +1,10 @@
 import Link from "next/link";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import data from '../data/data.json';
 
 export default function Projects() {
