@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "RocketNotes",
+    "description": "This project consists of a note saver, with authentication for each user to write down their notes securely and privately.",
+    "url": "https://frontend-c7pofbs65-mati-pereira.vercel.app/",
+    "github": "https://github.com/Mati-Pereira/rocketnotes-frontend",
+    "img": "rocketnotes.png"
+  },
+  {
+    "id": 2,
+    "name": "GITFAV",
+    "description": "This project consists of entering the github user of the person you want to search, thus showing the number of this person's repositories and some other relevant information to see",
+    "url": "https://gitfav.netlify.app/",
+    "github": "https://github.com/Mati-Pereira/git-favorites",
+    "img": "GITFAV.png"
+  },
+  {
+    "id": 3,
+    "name": "ToDo-List",
+    "description": "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
+    "url": "https://todo-list-matheus-rodrigues.netlify.app/",
+    "github": "https://github.com/Mati-Pereira/ToDo-List",
+    "img": "todoList.png"
+  }
+]

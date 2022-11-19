@@ -1,12 +1,9 @@
-import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
-import { FaDiscord } from 'react-icons/fa'
-
 import { init, sendForm } from 'emailjs-com';
 init('PL6RvQ2mJ6MgZ7ycK');
 
-import { useForm, SubmitHandler } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -66,7 +63,7 @@ export default function ContactMe() {
       </div>
 
       <div className='space-y-6 md:space-y-10'>
-    
+
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-full md:w-fit mx-auto' id='contact-form'>
 
           <div className='flex flex-col md:flex-row md:space-x-2 gap-2 md:gap-0 w-full'>

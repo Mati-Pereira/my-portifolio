@@ -7,9 +7,11 @@ export default function Hero(): JSX.Element {
     words:
       [
         "Hi, My Name is Matheus",
-        "I'm a React Developer",
+        "I'm a Fullstack Developer",
         "Nice to meet you",
-        "I Love Dogs"
+        "Fun Fact: 'I Love Dogs!'",
+        "Coffee is the best",
+        "#neverstoplearning"
       ],
     loop: true,
     delaySpeed: 2000,

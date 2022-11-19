@@ -8,36 +8,11 @@ import 'swiper/css/scrollbar';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import data from '../data/data.json';
+
 export default function Projects() {
 
-  const projects = [
-    {
-      id: 1,
-      name: "RocketNotes",
-      description: "This project consists of a note saver, with authentication for each user to write down their notes securely and privately.",
-      url: 'https://frontend-c7pofbs65-mati-pereira.vercel.app/',
-      github: 'https://github.com/Mati-Pereira/rocketnotes-frontend',
-      img: 'rocketnotes.png'
-    },
-    {
-      id: 2,
-      name: "GITFAV",
-      description: "This project consists of entering the github user of the person you want to search, thus showing the number of this person's repositories and some other relevant information to see",
-      url: 'https://gitfav.netlify.app/',
-      github: 'https://github.com/Mati-Pereira/git-favorites',
-      img: 'GITFAV.png'
-    },
-    {
-      id: 3,
-      name: "ToDo-List",
-      description: "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
-      url: 'https://todo-list-matheus-rodrigues.netlify.app/',
-      github: 'https://github.com/Mati-Pereira/ToDo-List',
-      img: 'todoList.png'
-    },
-  ]
-
-
+  const projects = data
   return (
 
     <Swiper
@@ -57,10 +32,8 @@ export default function Projects() {
     >
       {projects.map(project => (
         <SwiperSlide key={project.id}
-          className=''
         >
-          https://github.com/Mati-Pereira/rocketnotes-frontend<div
-            key={project.id} className="w-screen  flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-screen lg:flex-col">
+          <div key={project.id} className="w-screen  flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-screen lg:flex-col">
             <div className="flex justify-center items-center flex-col lg:flex-row">
               <Link href={project.url} target="_blank">
                 <img src={project.img} alt={project.description} className="cursor-pointer md:mx-12 mt-12 lg:max-w-lg md:max-w-md sm:max-w-sm" />
