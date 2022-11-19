@@ -20,9 +20,9 @@ export default function Projects() {
     },
     {
       id: 3,
-      name: "RocketNotes",
+      name: "ToDo-List",
       description: "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
-      url: 'https://todolistforlearningintentions.netlify.app/',
+      url: 'https://todo-list-matheus-rodrigues.netlify.app/',
       img: 'todoList.png'
     },
   ]
