@@ -15,7 +15,7 @@ export default function Projects() {
     <Swiper
       pagination={{
         clickable: true,
-        
+
       }}
       speed={1000}
       spaceBetween={30}
@@ -41,7 +41,7 @@ export default function Projects() {
                 <p>{project.description}</p>
               </div>
             </div>
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-xl font-semibold text-center underline decoration-yellow-600/50 pt-10">Link para O Github do Projeto</a>
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-xl font-semibold text-center underline decoration-yellow-600/50 pt-10">Github</a>
           </div>
         </SwiperSlide>
       ))}
