@@ -15,6 +15,7 @@ export default function Projects() {
     <Swiper
       pagination={{
         clickable: true,
+        
       }}
       speed={1000}
       spaceBetween={30}

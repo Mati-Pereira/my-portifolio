@@ -4,6 +4,7 @@
 
 body {
   background-color: rgb(36, 36, 36);
+  scroll-behavior: smooth;
 }
 
 @layer components {
@@ -13,4 +14,17 @@ body {
   .contactInput {
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-yellow-700/40 focus:text-yellow-500/70 hover:border-yellow-700/40 hover:text-yellow-500/70;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(202 138 4 / 0.5) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(202 138 4 / 0.5) !important;
+}
+
+.swiper-scrollbar {
+  background-color: rgba(240, 166, 6, 0.1) !important;
 }
