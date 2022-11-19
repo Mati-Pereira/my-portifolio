@@ -1,11 +1,11 @@
-import { NextPage } from "next"
+import { NextPage } from "next";
 import Head from 'next/head';
+import About from '../components/About';
+import ContactMe from "../components/ContactMe";
 import Header from '../components/Header';
 import Hero from "../components/Hero";
-import About from '../components/About';
-import Skills from "../components/Skills";
 import Projects from "../components/Projects";
-import ContactMe from "../components/ContactMe";
+import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
   return (
@@ -29,7 +29,6 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
-      {/* Contact Me */}
     </div>
   )
 }
