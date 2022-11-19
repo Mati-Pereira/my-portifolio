@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -38,9 +38,19 @@ export default function Projects() {
   return (
 
     <Swiper
-      pagination={true}
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      className=' flex h-screen'
+      pagination={{
+        clickable: true,
+      }}
+      speed={1000}
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      navigation={true}
+      scrollbar={{ draggable: true, enabled: true }}
+      modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
     >
       {projects.map(project => (
         <SwiperSlide key={project.id}
