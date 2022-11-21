@@ -11,7 +11,8 @@ const Home: NextPage = () => {
   return (
     <div className="bg-[rgb(36,36,36)] pr-3 text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-rounded scrollbar-track-[rgb(36, 36, 36)] hover:scrollbar-thumb-yellow-900/50">
       <Head>
-        <title>Protifolio of Matheus</title>
+        <title>Portifolio</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <Header />
       <section id="hero" className="snap-start">
