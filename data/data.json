@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Timer 2.0",
-    "description": "This project consists of a stopwatch, where the user can increase or decrease his time by 5 minutes. It also includes relaxing sounds, important for studying with a good focus.",
+    "description": "This project consists of a stopwatch, where the user can increase or decrease his time by 5 minutes. It also includes relaxing sounds, important for studying with a good focus. It also has dark mode",
     "url": "https://timer-2-0-3ubkd21mw-mati-pereira.vercel.app/",
     "github": "https://github.com/Mati-Pereira/timer-2.0",
     "img": "timer-2.png"
