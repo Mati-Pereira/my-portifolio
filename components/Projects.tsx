@@ -11,13 +11,11 @@ export default function Projects() {
 
   const projects = data
   return (
-    <>
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Projects</h3>
-
+    <div className="h-screen flex relative">
+      <h3 className="absolute text-center w-screen top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Projects</h3>
       <Swiper
         pagination={{
           clickable: true,
-
         }}
         speed={1000}
         spaceBetween={30}
@@ -49,6 +47,6 @@ export default function Projects() {
         ))}
 
       </Swiper>
-    </>
+    </div>
   )
 }
