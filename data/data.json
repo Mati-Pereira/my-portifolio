@@ -25,10 +25,10 @@
   },
   {
     "id": 4,
-    "name": "Timer 2.0",
-    "description": "This project consists of a stopwatch, where the user can increase or decrease his time by 5 minutes. It also includes relaxing sounds, important for studying with a good focus. It also has dark mode",
-    "url": "https://timer-2-0-3ubkd21mw-mati-pereira.vercel.app/",
-    "github": "https://github.com/Mati-Pereira/timer-2.0",
-    "img": "timer-2.png"
+    "name": "React Timer 2.0",
+    "description": "This app is a counter, along with relaxing sounds, perfect for extended study. This one also comes with dark mode.",
+    "url": "https://react-timer-2.netlify.app/",
+    "github": "https://github.com/Mati-Pereira/react-timer-2",
+    "img": "react-timer-2.png"
   }
 ]
