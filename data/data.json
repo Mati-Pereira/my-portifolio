@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "name": "App Pokedex",
+    "description": "An app to look at the attributes of your favorite pokemon, such as its color in shiny mode.",
+    "url": "https://app-pokedex-ashy.vercel.app/",
+    "github": "https://github.com/mati-Pereira/app-pokedex",
+    "img": "pokedex.png"
+  },
+  {
+    "id": 2,
     "name": "GITFAV",
     "description": "This project consists of entering the github user of the person you want to search, thus showing the number of this person's repositories and some other relevant information to see",
     "url": "https://gitfav.netlify.app/",
@@ -8,7 +16,7 @@
     "img": "GITFAV.png"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "ToDo-List",
     "description": "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
     "url": "https://todo-list-matheus-rodrigues.netlify.app/",
@@ -16,7 +24,7 @@
     "img": "todoList.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "React Timer 2.0",
     "description": "This app is a counter, along with relaxing sounds, perfect for extended study. This one also comes with dark mode.",
     "url": "https://react-timer-2.netlify.app/",
