@@ -68,7 +68,7 @@ export default function ContactMe() {
       </h3>
       <div className="flex flex-col mt-24 md:mt-32">
         <h4 className="text-3xl font-semibold text-center md:text-4xl">
-          Interessado?, entre em contato e
+          Interessado?, entre em contato e{" "}
           <span className="underline decoration-yellow-600/50">
             Vamos Conversar
           </span>

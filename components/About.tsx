@@ -37,7 +37,7 @@ export default function About() {
       />
       <div className="px-0 space-y-5 md:px-10 lg:px-28">
         <h4 className="text-4xl font-semibold lg:mb-14">
-          Aqui está um pouco da minha história
+          Aqui está um pouco da minha história{" "}
           <span className="underline decoration-yellow-700 ">
             Minha História
           </span>
@@ -52,7 +52,7 @@ export default function About() {
           Programação sempre foi uma paixão minha, desde a faculdade, sempre
           pensei em conectar meus conhecimentos com novas tecnologias, foi e é
           algo muito instintivo para mim. Dedico-me de corpo e alma para
-          realizar o meu sonho de ser um
+          realizar o meu sonho de ser um{" "}
           <span className="font-bold underline decoration-yellow-700">
             Front-end Web Developer.
           </span>
