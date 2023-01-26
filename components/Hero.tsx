@@ -7,7 +7,7 @@ export default function Hero(): JSX.Element {
     words:
       [
         "Hi, My Name is Matheus",
-        "I'm a Fullstack Developer",
+        "I'm a Front-end Developer",
         "Nice to meet you",
         "Fun Fact: 'I Love Dogs!'",
         "Coffee is the best",
