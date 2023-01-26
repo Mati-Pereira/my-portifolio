@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "App Pokedex",
-    "description": "An app to look at the attributes of your favorite pokemon, such as its color in shiny mode.",
+    "description": "Um aplicativo para ver os atributos do seu pokémon favorito, como sua cor no modo shiny.",
     "url": "https://app-pokedex-ashy.vercel.app/",
     "github": "https://github.com/mati-Pereira/app-pokedex",
     "img": "pokedex.png"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "GITFAV",
-    "description": "This project consists of entering the github user of the person you want to search, thus showing the number of this person's repositories and some other relevant information to see",
+    "description": "Este projeto consiste em inserir o usuário do github da pessoa que você deseja pesquisar, mostrando assim o número dos repositórios desta pessoa e algumas outras informações relevantes a serem consultadas.",
     "url": "https://gitfav.netlify.app/",
     "github": "https://github.com/Mati-Pereira/git-favorites",
     "img": "GITFAV.png"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "ToDo-List",
-    "description": "This project consists of an app to write down tasks that the user wants to remember, and can mark them as done when the user finishes them",
+    "description": "Este projeto consiste em um aplicativo para anotar as tarefas que o usuário deseja lembrar e pode marcá-las como concluídas quando o usuário as finalizar.",
     "url": "https://todo-list-matheus-rodrigues.netlify.app/",
     "github": "https://github.com/Mati-Pereira/ToDo-List",
     "img": "todoList.png"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "React Timer 2.0",
-    "description": "This app is a counter, along with relaxing sounds, perfect for extended study. This one also comes with dark mode.",
+    "description": "Este aplicativo é um contador, junto com sons relaxantes, perfeito para estudos prolongados. Este também vem com o modo escuro.",
     "url": "https://react-timer-2.netlify.app/",
     "github": "https://github.com/Mati-Pereira/react-timer-2",
     "img": "react-timer-2.png"

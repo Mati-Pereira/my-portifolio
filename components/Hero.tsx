@@ -3,13 +3,12 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 
 export default function Hero(): JSX.Element {
-  const [text, count] = useTypewriter({
+  const [text, _] = useTypewriter({
     words: [
-      "Hi, My Name is Matheus",
-      "I'm a Front-end Developer",
-      "Nice to meet you",
-      "Fun Fact: 'I Love Dogs!'",
-      "Coffee is the best",
+      "Olá, meu nome é Matheus",
+      "Sou um Front-end Developer",
+      "Curiosidade: 'Eu amo cachorros!'",
+      "Café é a melhor bebida",
       "#neverstoplearning",
     ],
     loop: true,
