@@ -4,6 +4,7 @@
 
 body {
   background-color: rgb(36, 36, 36);
+  scroll-behavior: smooth;
 }
 
 @layer components {

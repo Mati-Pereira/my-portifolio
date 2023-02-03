@@ -9,7 +9,7 @@ import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)] pr-3 text-white min-h-screen snap-y snap-mandatory overflow-y-scroll z-0 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-rounded scrollbar-track-[rgb(36, 36, 36)] hover:scrollbar-thumb-yellow-900/50">
+    <div className="bg-[rgb(36,36,36)] pr-3 text-white min-h-screen overflow-y-hidden z-0 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-rounded scrollbar-track-[rgb(36, 36, 36)] hover:scrollbar-thumb-yellow-900/50">
       <Head>
         <title>Portifolio</title>
         <link
@@ -20,9 +20,15 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
       <ContactMe />
     </div>
   );
