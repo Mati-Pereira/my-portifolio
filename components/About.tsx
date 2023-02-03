@@ -37,7 +37,7 @@ export default function About() {
       />
       <div className="px-0 space-y-5 md:px-10 lg:px-28">
         <h4 className="text-4xl font-semibold lg:mb-14">
-          Aqui está um pouco da minha história{" "}
+          Aqui está um pouco da{" "}
           <span className="underline decoration-yellow-700 ">
             Minha História
           </span>
