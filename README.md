@@ -1,11 +1,10 @@
-
 # Portifólio
 
 Portifólio criado para demonstrar minhas habilidades.
+
 ## Autores
 
 - [@Mati-Pereira](https://www.github.com/Mati-Pereira)
-
 
 ## Demonstração
 
@@ -17,9 +16,6 @@ https://portifolio-new-4q6j.vercel.app/
 
 **Front-end:** Next.js, Typescript, TailwindCSS, Framer Motion
 
-
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-

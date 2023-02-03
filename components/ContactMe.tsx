@@ -62,12 +62,12 @@ export default function ContactMe() {
     );
   };
   return (
-    <div className="relative flex flex-col items-center h-screen max-w-6xl px-10 mx-auto text-center md:text-left justify-evenly">
+    <div className="relative flex flex-col items-center max-w-6xl min-h-screen px-10 mx-auto text-center md:text-left justify-evenly">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contatos
       </h3>
       <div className="flex flex-col mt-24 md:mt-32">
-        <h4 className="text-3xl font-semibold text-center md:text-4xl">
+        <h4 className="max-w-2xl text-3xl font-semibold text-center md:text-4xl">
           Interessado?, entre em contato e{" "}
           <span className="underline decoration-yellow-600/50">
             Vamos Conversar
@@ -84,7 +84,7 @@ export default function ContactMe() {
           <div className="flex flex-col w-full gap-2 md:flex-row md:space-x-2 md:gap-0">
             <input
               {...register("name")}
-              placeholder="Name"
+              placeholder="Nome"
               className="contactInput"
               type="text"
             />
@@ -98,14 +98,14 @@ export default function ContactMe() {
 
           <input
             {...register("subject")}
-            placeholder="Subject"
+            placeholder="Assunto"
             className="contactInput"
             type="text"
           />
 
           <textarea
             {...register("message")}
-            placeholder="Message"
+            placeholder="Mensagem"
             className="contactInput"
           />
 
@@ -113,7 +113,7 @@ export default function ContactMe() {
             type="submit"
             className="px-10 py-5 font-bold text-black duration-200 bg-yellow-600 rounded-md hover:bg-yellow-600/40 hover:text-white"
           >
-            Submit
+            Enviar
           </button>
           <ToastContainer
             position="top-right"
