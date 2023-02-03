@@ -66,7 +66,7 @@ export default function ContactMe() {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contatos
       </h3>
-      <div className="flex flex-col mt-24 md:mt-32">
+      <div className="flex flex-col py-10 mt-24 md:mt-32">
         <h4 className="max-w-2xl text-3xl font-semibold text-center md:text-4xl">
           Interessado?, entre em contato e{" "}
           <span className="underline decoration-yellow-600/50">

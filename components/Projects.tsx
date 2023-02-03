@@ -10,8 +10,8 @@ import data from "../data/data.json";
 export default function Projects() {
   const projects = data;
   return (
-    <div className="relative flex min-h-screen">
-      <h3 className="absolute text-center w-screen top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className="relative min-h-screen">
+      <h3 className="lg:absolute pt-10 text-center w-screen top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
       <Swiper
@@ -43,7 +43,7 @@ export default function Projects() {
                     className="mt-12 cursor-pointer md:mx-12 lg:max-w-lg md:max-w-md sm:max-w-sm"
                   />
                 </Link>
-                <div className="max-w-6xl px-0 space-y-10">
+                <div className="max-w-6xl px-0 pt-3 space-y-10">
                   <h4 className="pt-16 text-4xl font-semibold text-center underline decoration-yellow-600/50 md:pt-0">
                     {project.name}
                   </h4>
