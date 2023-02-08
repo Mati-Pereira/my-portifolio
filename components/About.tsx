@@ -35,17 +35,17 @@ export default function About() {
         src="https://github.com/Mati-Pereira.png"
         className="md:my-10 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-xl xl:w-[300px] xl:h-[400px] "
       />
-      <div className="px-0 space-y-5 md:px-10 lg:px-28">
+      <div className="px-5 space-y-10 text-justify md:px-10 lg:px-28">
         <h4 className="text-4xl font-semibold underline lg:mb-14 decoration-yellow-700 ">
           Minha História
         </h4>
-        <p className="text-sm justify text-s sm:text-base ">
+        <p className="text-md justify sm:text-base ">
           Olá, como vai? Meu nome é Matheus Rodrigues Pereira e agradeço por
           dedicar seu tempo para olhar este portfólio. Tenho 25 anos e
           atualmente estou desempregado. Sou formado em Engenharia Elétrica pela
           Universidade Vale do Rio Doce, no ano de 2019.
         </p>
-        <p className="text-sm justify text-s sm:text-base ">
+        <p className="text-md justify sm:text-base ">
           Programação sempre foi uma paixão minha, desde a faculdade, sempre
           pensei em conectar meus conhecimentos com novas tecnologias, foi e é
           algo muito instintivo para mim. Dedico-me de corpo e alma para
