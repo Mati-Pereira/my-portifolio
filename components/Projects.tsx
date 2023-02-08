@@ -5,10 +5,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
-import data from "../data/data.json";
+import data from "../data/data";
 
-export default function Projects() {
-  const projects = data;
+function Projects() {
   return (
     <div className="relative min-h-screen">
       <h3 className="lg:absolute pt-10 text-center w-screen top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -29,7 +28,7 @@ export default function Projects() {
         scrollbar={{ draggable: true, enabled: true }}
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
       >
-        {projects.map((project) => (
+        {data?.map((project) => (
           <SwiperSlide key={project.id}>
             <div
               key={project.id}
@@ -65,3 +64,5 @@ export default function Projects() {
     </div>
   );
 }
+
+export default Projects;

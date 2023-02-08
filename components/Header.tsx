@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
-function Header(): JSX.Element {
+function Header() {
   return (
     <header className="sticky top-0 z-20 flex items-start justify-between max-w-6xl p-5 mx-auto xl:items-center">
       <motion.div
@@ -24,9 +24,10 @@ function Header(): JSX.Element {
           className="hover:animate-pulse"
           target="_blank"
           network="github"
-          url="https://github.com/Mati-Pereira"
+          url="https://github.com/mati-pereira"
           bgColor="transparent"
           fgColor="gray"
+          id="github"
         />
         <SocialIcon
           className="hover:animate-pulse"

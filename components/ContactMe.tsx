@@ -1,10 +1,7 @@
 import { init, sendForm } from "emailjs-com";
 init("PL6RvQ2mJ6MgZ7ycK");
-
 import { SubmitHandler, useForm } from "react-hook-form";
-
 import { toast, ToastContainer } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 
 type Inputs = {
@@ -36,19 +33,32 @@ export default function ContactMe() {
         }
       );
     }
-    sendForm("default_service", "template_irvv74i", "#contact-form").then(
-      function () {
-        return toast.success("Email mandado com sucesso", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: true,
-          progress: undefined,
-        });
-      },
-      function () {
+    sendForm("default_service", "template_irvv74i", "#contact-form")
+      .then(
+        function () {
+          return toast.success("Email mandado com sucesso", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+          });
+        },
+        function () {
+          return toast.error("Erro ao mandar o email", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+      )
+      .catch(function (error) {
         return toast.error("Erro ao mandar o email", {
           position: "top-right",
           autoClose: 5000,
@@ -58,8 +68,7 @@ export default function ContactMe() {
           draggable: true,
           progress: undefined,
         });
-      }
-    );
+      });
   };
   return (
     <div className="relative flex flex-col items-center max-w-6xl min-h-screen px-10 mx-auto text-center md:text-left justify-evenly">
@@ -80,6 +89,7 @@ export default function ContactMe() {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col w-full mx-auto space-y-2 md:w-fit"
           id="contact-form"
+          typeof="email"
         >
           <div className="flex flex-col w-full gap-2 md:flex-row md:space-x-2 md:gap-0">
             <input
@@ -110,9 +120,11 @@ export default function ContactMe() {
           />
 
           <button
-            type="submit"
-            placeholder="Enviar"
             className="px-10 py-5 font-bold text-black duration-200 bg-yellow-600 rounded-md hover:bg-yellow-600/40 hover:text-white"
+            type="submit"
+            role="button"
+            id="submit"
+            placeholder="Enviar"
           >
             Enviar
           </button>
