@@ -33,13 +33,13 @@ export default function Hero(): JSX.Element {
           </h1>
         </div>
         <div className="pt-5 pb-10">
-          <Link href="#about">
+          <Link href="#about" className="scroll-smooth">
             <button className="heroButton">Sobre</button>
           </Link>
-          <Link href="#skills">
+          <Link href="#skills" className="scroll-smooth">
             <button className="heroButton">Habilidades</button>
           </Link>
-          <Link href="#projects">
+          <Link href="#projects" className="scroll-smooth">
             <button className="heroButton">Projetos</button>
           </Link>
         </div>
