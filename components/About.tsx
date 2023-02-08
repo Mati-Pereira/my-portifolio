@@ -34,6 +34,7 @@ export default function About() {
         }}
         src="https://github.com/Mati-Pereira.png"
         className="md:my-10 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-xl xl:w-[300px] xl:h-[400px] "
+        alt="My github picture"
       />
       <div className="px-5 space-y-10 text-justify md:px-10 lg:px-28">
         <h4 className="text-4xl font-semibold underline lg:mb-14 decoration-yellow-700 ">

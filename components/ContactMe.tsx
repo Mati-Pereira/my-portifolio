@@ -23,20 +23,22 @@ export default function ContactMe() {
     subject,
   }) => {
     if (!email || !message || !name || !subject) {
-      toast.error("Alguns campos estão faltando, por favor preencha-os", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: true,
-        progress: undefined,
-      });
-      return;
+      return toast.error(
+        "Alguns campos estão faltando, por favor preencha-os",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+        }
+      );
     }
     sendForm("default_service", "template_irvv74i", "#contact-form").then(
-      function (response) {
-        toast.success("Email mandado com sucesso", {
+      function () {
+        return toast.success("Email mandado com sucesso", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -45,10 +47,9 @@ export default function ContactMe() {
           draggable: true,
           progress: undefined,
         });
-        console.log("SUCCESS!", response.status, response.text);
       },
-      function (error) {
-        toast.error("Erro ao mandar o email", {
+      function () {
+        return toast.error("Erro ao mandar o email", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -57,7 +58,6 @@ export default function ContactMe() {
           draggable: true,
           progress: undefined,
         });
-        console.log("FAILED...", error);
       }
     );
   };
@@ -111,6 +111,7 @@ export default function ContactMe() {
 
           <button
             type="submit"
+            placeholder="Enviar"
             className="px-10 py-5 font-bold text-black duration-200 bg-yellow-600 rounded-md hover:bg-yellow-600/40 hover:text-white"
           >
             Enviar
