@@ -18,7 +18,7 @@ export default function Skills(): JSX.Element {
       }}
       className="py-10 gap-5 flex lg:relative flex-col textcenter md:text-left xl:dlex-row max-w-[1000px] xl:px-10 min-h-screen justify-center sl:space-y-0 mx-auto items-center px-10 text-center"
     >
-      <h3 className="lg:absolute lg:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="lg:absolute lg:top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
         Habilidades
       </h3>
       <h3 className="lg:absolute lg:top-36 uppercase tracking-[3px] text-gray-500 text-sm ">
