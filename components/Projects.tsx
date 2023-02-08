@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <div className="relative min-h-screen">
       <h3 className="lg:absolute pt-10 text-center w-screen top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Projects
+        Projetos
       </h3>
       <Swiper
         pagination={{
