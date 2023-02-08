@@ -15,7 +15,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="scroll-smooth">
+      <Html>
         <Head>
           <link rel="shortcut icon" href="/favicon.png" />
         </Head>
