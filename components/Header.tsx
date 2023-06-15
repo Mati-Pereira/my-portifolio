@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
+import { useTranslation } from "next-i18next";
 
 function Header() {
+  const { t } = useTranslation();
   return (
     <header className="sticky top-0 z-20 flex items-start justify-between max-w-6xl p-5 mx-auto xl:items-center">
       <motion.div
@@ -64,7 +66,7 @@ function Header() {
           fgColor="gray"
         />
         <p className="hidden text-sm text-gray-400 uppercase md:inline-flex">
-          Entre em contato
+          {t("header.info")}
         </p>
       </motion.div>
     </header>

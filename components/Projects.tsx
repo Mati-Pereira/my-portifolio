@@ -6,12 +6,14 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../data/data";
+import { useTranslation } from "next-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
   return (
     <div className="relative min-h-screen">
       <h3 className="lg:absolute pt-10 text-center w-screen top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Projetos
+        {t("projects.title")}
       </h3>
       <Swiper
         pagination={{
@@ -46,7 +48,7 @@ function Projects() {
                   <h4 className="pt-16 text-4xl font-semibold text-center underline decoration-yellow-600/50 md:pt-0">
                     {project.name}
                   </h4>
-                  <p>{project.description}</p>
+                  <p>{t(project.description)}</p>
                 </div>
               </div>
               <a

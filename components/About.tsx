@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <motion.div
       initial={{
@@ -15,7 +17,7 @@ export default function About() {
       className="flex flex-col items-center max-w-6xl min-h-screen px-10 mx-auto text-center lg:flex-row md:relative md:text-left justify-evenly"
     >
       <h3 className="lg:absolute lg:top-10 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Sobre
+        {t("about.title")}
       </h3>
       <motion.img
         initial={{
@@ -41,18 +43,12 @@ export default function About() {
           Minha História
         </h4>
         <p className="text-md justify sm:text-base ">
-          Olá, como vai? Meu nome é Matheus Rodrigues Pereira e agradeço por
-          dedicar seu tempo para olhar este portfólio. Tenho 25 anos e
-          atualmente estou desempregado. Sou formado em Engenharia Elétrica pela
-          Universidade Vale do Rio Doce, no ano de 2019.
+          {t("about.description.paragraph1")}
         </p>
         <p className="text-md justify sm:text-base ">
-          Programação sempre foi uma paixão minha, desde a faculdade, sempre
-          pensei em conectar meus conhecimentos com novas tecnologias, foi e é
-          algo muito instintivo para mim. Dedico-me de corpo e alma para
-          realizar o meu sonho de ser um{" "}
+          {t("about.description.paragraph2")}
           <span className="font-bold underline decoration-yellow-700">
-            Front-end Web Developer.
+            {t("about.description.span")}
           </span>
         </p>
       </div>

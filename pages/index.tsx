@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Home: NextPage = () => {
   return (
@@ -32,6 +33,15 @@ const Home: NextPage = () => {
       <ContactMe />
     </div>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || "pt", ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 };
 
 export default Home;

@@ -1,3 +1,54 @@
 {
-  "title": "Olá Mundo"
+  "header": {
+    "info": "Entre em Contato"
+  },
+  "hero": {
+    "words": {
+      "phrase1": "Olá, meu nome é Matheus",
+      "phrase2": "Sou um Front-end Developer",
+      "phrase3": "Curiosidade: 'Eu amo cachorros!'",
+      "phrase4": "Café é a melhor bebida"
+    },
+    "about": "Sobre",
+    "habilities": "Habilidades",
+    "projects": "Projetos"
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Minha História",
+    "description": {
+      "paragraph1": "Olá, como vai? Meu nome é Matheus Rodrigues Pereira e agradeço por dedicar seu tempo para olhar este portfólio. Tenho 25 anos e atualmente estou desempregado. Sou formado em Engenharia Elétrica pela Universidade Vale do Rio Doce, no ano de 2019.",
+      "paragraph2": "Programação sempre foi uma paixão minha, desde a faculdade, sempre pensei em conectar meus conhecimentos com novas tecnologias, foi e é algo muito instintivo para mim. Dedico-me de corpo e alma para realizar o meu sonho de ser um ",
+      "span": "Desenvolvedor Web Front-End"
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Passe o mouse por cima da habilidade para ver minha proficiência"
+  },
+  "projects": {
+    "title": "Projetos",
+    "description1": "Applicativo para realizar consultas com pacientes de maneira online.",
+    "description2": "Aplicativo para cadastrar comidas para vendê-las de maneira comercial, app apenas fictício.",
+    "description3": "Um aplicativo para ver os atributos do seu pokémon favorito, como sua cor no modo shiny.",
+    "description4": "Este projeto consiste em inserir o usuário do github da pessoa que você deseja pesquisar, mostrando assim o número dos repositórios desta pessoa e algumas outras informações relevantes a serem consultadas.",
+    "description5": "Este projeto consiste em um aplicativo para anotar as tarefas que o usuário deseja lembrar e pode marcá-las como concluídas quando o usuário as finalizar.",
+    "description6": "Este aplicativo é um contador, junto com sons relaxantes, perfeito para estudos prolongados. Este também vem com o modo escuro."
+  },
+  "contact": {
+    "missing-info": "Alguns campos estão faltando, por favor preencha-os",
+    "success-toast": "Email enviado com sucesso",
+    "error-toast": "Erro ao enviar email",
+    "title": "Contatos",
+    "subtitle": "Interessado?, entre em contato e ",
+    "span": "Vamos Conversar?",
+    "placeholders": {
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "button": "Enviar"
+    },
+    "button": "Enviar"
+  }
 }

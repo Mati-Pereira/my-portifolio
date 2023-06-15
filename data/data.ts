@@ -2,8 +2,7 @@ const data = [
   {
     id: 1,
     name: "MedOn",
-    description:
-      "Applicativo para realizar consultas com pacientes de maneira online.",
+    description: "projects.description1",
     url: "https://medon.fun/",
     github: "https://github.com/ZenBit-Tech/MedOn_fe",
     img: "medon.png",
@@ -11,8 +10,7 @@ const data = [
   {
     id: 2,
     name: "Food Explorer",
-    description:
-      "Aplicativo para cadastrar comidas para vendê-las de maneira comercial, app apenas fictício.",
+    description: "projects.description2",
     url: "https://admirable-tiramisu-e924f5.netlify.app/",
     github: "https://github.com/Mati-Pereira/foodexplorer-front",
     img: "foodexplorer.png",
@@ -20,8 +18,7 @@ const data = [
   {
     id: 3,
     name: "App Pokedex",
-    description:
-      "Um aplicativo para ver os atributos do seu pokémon favorito, como sua cor no modo shiny.",
+    description: "projects.description3",
     url: "https://app-pokedex-ashy.vercel.app/",
     github: "https://github.com/mati-Pereira/app-pokedex",
     img: "pokedex.png",
@@ -29,8 +26,7 @@ const data = [
   {
     id: 4,
     name: "GITFAV",
-    description:
-      "Este projeto consiste em inserir o usuário do github da pessoa que você deseja pesquisar, mostrando assim o número dos repositórios desta pessoa e algumas outras informações relevantes a serem consultadas.",
+    description: "projects.description4",
     url: "https://gitfav.netlify.app/",
     github: "https://github.com/Mati-Pereira/git-favorites",
     img: "GITFAV.png",
@@ -38,17 +34,15 @@ const data = [
   {
     id: 5,
     name: "ToDo-List",
-    description:
-      "Este projeto consiste em um aplicativo para anotar as tarefas que o usuário deseja lembrar e pode marcá-las como concluídas quando o usuário as finalizar.",
+    description: "projects.description5",
     url: "https://todo-list-matheus-rodrigues.netlify.app/",
     github: "https://github.com/Mati-Pereira/ToDo-List",
     img: "todoList.png",
   },
   {
-    id: 5,
+    id: 6,
     name: "React Timer 2.0",
-    description:
-      "Este aplicativo é um contador, junto com sons relaxantes, perfeito para estudos prolongados. Este também vem com o modo escuro.",
+    description: "projects.description6",
     url: "https://react-timer-2.netlify.app/",
     github: "https://github.com/Mati-Pereira/react-timer-2",
     img: "react-timer-2.png",

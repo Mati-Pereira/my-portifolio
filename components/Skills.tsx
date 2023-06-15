@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import { useTranslation } from "next-i18next";
 
 export default function Skills(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <motion.div
       initial={{
@@ -19,10 +21,10 @@ export default function Skills(): JSX.Element {
       className="py-10 gap-5 flex lg:relative flex-col textcenter md:text-left xl:dlex-row max-w-[1000px] xl:px-10 min-h-screen justify-center sl:space-y-0 mx-auto items-center px-10 text-center"
     >
       <h3 className="lg:absolute lg:top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
-        Habilidades
+        {t("skills.title")}
       </h3>
       <h3 className="lg:absolute lg:top-36 uppercase tracking-[3px] text-gray-500 text-sm ">
-        Passe o mouse por cima da habilidade para ver minha proficiência
+        {t("skills.subtitle")}
       </h3>
       <div className="grid grid-cols-3 gap-5 mt-16 md:grid-cols-4">
         <Skill src="skills/html5.png" percentage="80%" />

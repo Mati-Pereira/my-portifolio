@@ -1,6 +1,7 @@
 import { init, sendForm } from "emailjs-com";
 init("PL6RvQ2mJ6MgZ7ycK");
 import { SubmitHandler, useForm } from "react-hook-form";
+import { useTranslation } from "next-i18next";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -12,6 +13,7 @@ type Inputs = {
 };
 
 export default function ContactMe() {
+  const { t } = useTranslation();
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = ({
     email,
@@ -20,23 +22,20 @@ export default function ContactMe() {
     subject,
   }) => {
     if (!email || !message || !name || !subject) {
-      return toast.error(
-        "Alguns campos estão faltando, por favor preencha-os",
-        {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: true,
-          progress: undefined,
-        }
-      );
+      return toast.error(t("contact.missing-info"), {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
     }
     sendForm("default_service", "template_irvv74i", "#contact-form")
       .then(
         function () {
-          return toast.success("Email mandado com sucesso", {
+          return toast.success(t("contact.success-toast"), {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -47,7 +46,7 @@ export default function ContactMe() {
           });
         },
         function () {
-          return toast.error("Erro ao mandar o email", {
+          return toast.error(t("contact.error-toast"), {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -59,7 +58,7 @@ export default function ContactMe() {
         }
       )
       .catch(function (error) {
-        return toast.error("Erro ao mandar o email", {
+        return toast.error(t("contact.error-toast"), {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -73,13 +72,13 @@ export default function ContactMe() {
   return (
     <div className="relative flex flex-col items-center max-w-6xl min-h-screen px-10 mx-auto text-center md:text-left justify-evenly">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Contatos
+        {t("contact.title")}
       </h3>
       <div className="flex flex-col py-10 mt-24 md:mt-32">
         <h4 className="max-w-2xl text-3xl font-semibold text-center md:text-4xl">
-          Interessado?, entre em contato e{" "}
+          {t("contact.subtitle")}
           <span className="underline decoration-yellow-600/50">
-            Vamos Conversar
+            {t("contact.span")}
           </span>
         </h4>
       </div>
@@ -94,13 +93,13 @@ export default function ContactMe() {
           <div className="flex flex-col w-full gap-2 md:flex-row md:space-x-2 md:gap-0">
             <input
               {...register("name")}
-              placeholder="Nome"
+              placeholder={t("contact.placeholders.name")}
               className="contactInput"
               type="text"
             />
             <input
               {...register("email")}
-              placeholder="Email"
+              placeholder={t("contact.placeholders.email")}
               className="contactInput"
               type="email"
             />
@@ -108,14 +107,14 @@ export default function ContactMe() {
 
           <input
             {...register("subject")}
-            placeholder="Assunto"
+            placeholder={t("contact.placeholders.subject")}
             className="contactInput"
             type="text"
           />
 
           <textarea
             {...register("message")}
-            placeholder="Mensagem"
+            placeholder={t("contact.placeholders.message")}
             className="contactInput"
           />
 
@@ -124,9 +123,9 @@ export default function ContactMe() {
             type="submit"
             role="button"
             id="submit"
-            placeholder="Enviar"
+            placeholder={t("contact.placeholders.button")}
           >
-            Enviar
+            {t("contact.button")}
           </button>
           <ToastContainer
             position="top-right"

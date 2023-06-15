@@ -1,14 +1,16 @@
 import Link from "next/link";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
+import { useTranslation } from "next-i18next";
 
-export default function Hero(): JSX.Element {
+export default function Hero() {
+  const { t } = useTranslation();
   const [text, _] = useTypewriter({
     words: [
-      "Olá, meu nome é Matheus",
-      "Sou um Front-end Developer",
-      "Curiosidade: 'Eu amo cachorros!'",
-      "Café é a melhor bebida",
+      t("hero.words.phrase1"),
+      t("hero.words.phrase2"),
+      t("hero.words.phrase3"),
+      t("hero.words.phrase4"),
     ],
     loop: true,
     delaySpeed: 2000,
@@ -34,13 +36,13 @@ export default function Hero(): JSX.Element {
         </div>
         <div className="pt-5 pb-10">
           <Link href="#about" className="scroll-smooth">
-            <button className="heroButton">Sobre</button>
+            <button className="heroButton">{t("hero.about")}</button>
           </Link>
           <Link href="#skills" className="scroll-smooth">
-            <button className="heroButton">Habilidades</button>
+            <button className="heroButton">{t("hero.habilities")}</button>
           </Link>
           <Link href="#projects" className="scroll-smooth">
-            <button className="heroButton">Projetos</button>
+            <button className="heroButton">{t("hero.projects")}</button>
           </Link>
         </div>
       </div>

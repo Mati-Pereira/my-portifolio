@@ -1,3 +1,52 @@
 {
-  "title": "Hello World"
+  "header": { "info": "Get in Touch" },
+  "hero": {
+    "words": {
+      "phrase1": "Hello, my name is Matheus",
+      "phrase2": "I'm a Front-end Developer",
+      "phrase3": "Fun fact: 'I love dogs!'",
+      "phrase4": "Coffee is the best drink"
+    },
+    "about": "About",
+    "habilities": "Skills",
+    "projects": "Projects"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "My Story",
+    "description": {
+      "paragraph1": "Hello, how are you? My name is Matheus Rodrigues Pereira and I thank you for taking the time to look at this portfolio. I'm 25 years old and currently unemployed. I graduated in Electrical Engineering from Vale do Rio Doce University in 2019.",
+      "paragraph2": "Programming has always been a passion of mine, since college, I've always thought about connecting my knowledge with new technologies, it's something very instinctive for me. I dedicate myself body and soul to achieve my dream of being a ",
+      "span": "Front-End Web Developer"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Hover over the skill to see my proficiency"
+  },
+  "projects": {
+    "title": "Projects",
+    "description1": "Application for online consultations with patients.",
+    "description2": "Application to register foods for commercial sale, app only fictitious.",
+    "description3": "An application to see the attributes of your favorite pokemon, such as its color in shiny mode.",
+    "description4": "This project consists of entering the github user of the person you want to search, thus showing the number of repositories of this person and some other relevant information to be consulted.",
+    "description5": "This project consists of an application to note the tasks that the user wants to remember and can mark them as completed when the user finishes them.",
+    "description6": "This application is a counter, along with relaxing sounds, perfect for prolonged studies. This also comes with dark mode."
+  },
+  "contact": {
+    "missing-info": "Some fields are missing, please fill them out",
+    "success-toast": "Email sent successfully",
+    "error-toast": "Error sending email",
+    "title": "Contacts",
+    "subtitle": "Interested?, get in touch and ",
+    "span": "Let's Talk?",
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "button": "Send"
+    },
+    "button": "Send"
+  }
 }
