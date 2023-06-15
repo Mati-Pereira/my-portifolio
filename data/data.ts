@@ -1,6 +1,24 @@
 const data = [
   {
     id: 1,
+    name: "MedOn",
+    description:
+      "Applicativo para realizar consultas com pacientes de maneira online.",
+    url: "https://medon.fun/",
+    github: "https://github.com/ZenBit-Tech/MedOn_fe",
+    img: "medon.png",
+  },
+  {
+    id: 2,
+    name: "Food Explorer",
+    description:
+      "Aplicativo para cadastrar comidas para vendê-las de maneira comercial, app apenas fictício.",
+    url: "https://admirable-tiramisu-e924f5.netlify.app/",
+    github: "https://github.com/Mati-Pereira/foodexplorer-front",
+    img: "foodexplorer.png",
+  },
+  {
+    id: 3,
     name: "App Pokedex",
     description:
       "Um aplicativo para ver os atributos do seu pokémon favorito, como sua cor no modo shiny.",
@@ -9,7 +27,7 @@ const data = [
     img: "pokedex.png",
   },
   {
-    id: 2,
+    id: 4,
     name: "GITFAV",
     description:
       "Este projeto consiste em inserir o usuário do github da pessoa que você deseja pesquisar, mostrando assim o número dos repositórios desta pessoa e algumas outras informações relevantes a serem consultadas.",
@@ -18,7 +36,7 @@ const data = [
     img: "GITFAV.png",
   },
   {
-    id: 3,
+    id: 5,
     name: "ToDo-List",
     description:
       "Este projeto consiste em um aplicativo para anotar as tarefas que o usuário deseja lembrar e pode marcá-las como concluídas quando o usuário as finalizar.",
@@ -27,7 +45,7 @@ const data = [
     img: "todoList.png",
   },
   {
-    id: 4,
+    id: 5,
     name: "React Timer 2.0",
     description:
       "Este aplicativo é um contador, junto com sons relaxantes, perfeito para estudos prolongados. Este também vem com o modo escuro.",
