@@ -1,6 +1,11 @@
 {
-  "header": { "info": "Get in Touch" },
+  "header": {
+    "info": "Get in Touch",
+    "en": "English",
+    "pt": "Portuguese"
+  },
   "hero": {
+    "title": "Front-End Web Developer",
     "words": {
       "phrase1": "Hello, my name is Matheus",
       "phrase2": "I'm a Front-end Developer",

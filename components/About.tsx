@@ -40,7 +40,7 @@ export default function About() {
       />
       <div className="px-5 space-y-10 text-justify md:px-10 lg:px-28">
         <h4 className="text-4xl font-semibold underline lg:mb-14 decoration-yellow-700 ">
-          Minha História
+          {t("about.subtitle")}
         </h4>
         <p className="text-md justify sm:text-base ">
           {t("about.description.paragraph1")}

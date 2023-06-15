@@ -1,8 +1,11 @@
 {
   "header": {
-    "info": "Entre em Contato"
+    "info": "Entre em Contato",
+    "en": "Inglês",
+    "pt": "Português"
   },
   "hero": {
+    "title": "Desenvolvedor Web Front-End",
     "words": {
       "phrase1": "Olá, meu nome é Matheus",
       "phrase2": "Sou um Front-end Developer",

@@ -26,7 +26,7 @@ export default function Hero() {
       />
       <div>
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[12px]">
-          Front-end Web Developer
+          {t("hero.title")}
         </h2>
         <div className="flex justify-center items-center h-[200px]">
           <h1 className="px-10 text-5xl font-semibold lg:text-6xl">
